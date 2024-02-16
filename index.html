@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Declares the document type to be HTML5, ensuring proper rendering in browsers -->
+<html>
+<head>
+    <title>Your Page Title</title> <!-- The title of the webpage, shown in the browser tab -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document, UTF-8 supports most characters from all written languages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures the page is mobile-friendly by setting the viewport to match device width -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file for styling the webpage -->
+</head>
+<body>
+
+    <!-- Custom Navbar -->
+    <div class="navbar"> <!-- Creates a navigation bar with links to different sections of the page -->
+        <a href="#header">hotline</a> <!-- Navigation link to the "header" section of the page -->
+        <div class="navbar-right"> <!-- Container for navigation links aligned to the right side of the navbar -->
+          <a href="#video">video</a> <!-- Navigation link to the "video" section -->
+          <a href="#picture">highlights</a> <!-- Navigation link to the "picture" section -->
+          <a href="#contact">contact</a> <!-- Navigation link to the "contact" section -->
+      </div>
+  </div>
+
+  <!-- Header with Carousel and Navigation Dots -->
+  <div id="header"></div> <!-- Placeholder or anchor point for the "header" section -->
+  <header class="carousel-container section-h"> <!-- Container for the image carousel and its header text -->
+    <div class="carousel"> <!-- Container for carousel images -->
+        <img src="webimg/riize.png" alt="love 119 Hotline" class="slide" style="width:100%;"> <!-- Carousel image with description -->
+        <img src="webimg/sohee.png" alt="Second Image" class="slide"> <!-- Another carousel image -->
+        <img src="webimg/tv.png" alt="Third Image" class="slide"> <!-- Third carousel image -->
+    </div>
+    <!-- Navigation dots -->
+    <div class="dots-container"> <!-- Container for navigation dots for the carousel -->
+        <span class="dot"></span> <!-- Individual dot representing the first image -->
+        <span class="dot"></span> <!-- Dot for the second image -->
+        <span class="dot"></span> <!-- Dot for the third image -->
+    </div>
+    <div class="header-text"> <!-- Container for the text overlay on the carousel -->
+        <h1>love 119 Hotline</h1> <!-- Main heading for the header section -->
+        <p>Dial into My World and What I like</p> <!-- Tagline or descriptive text -->
+    </div>
+</header>
+
+<!-- Video Section -->
+<div id="video" class="section-container section-h"> <!-- Container for the video section with a unique ID and class names for styling -->
+
+    <div class="video-container"> <!-- Sub-container dedicated to embedding the video -->
+        <!-- Insert your video here -->
+        <iframe src="https://drive.google.com/file/d/1wbVI3KQScTcFfFmpElxDCTSzD9rpaqqS/preview" width="640" height="480" allow="autoplay"></iframe> <!-- Embeds a video from Google Drive with specified dimensions and allows it to autoplay -->
+    </div>
+
+    <div class="section-right"> <!-- Container for the text content adjacent to the video -->
+        <h1> <b> My Film </b> </h1> <!-- The heading for the section, emphasizing "My Film" -->
+        <p> Drawing on the unique dynamics of a hotline center, where each call introduces the caller to a critical aspect of the service provided, my film showcases a parallel to my own life. Acting as though my existence is centered around such a hotline, the narrative delves into a significant phase of my life attending NYUAD. This experience, akin to answering a life-altering call, has transformed me in countless ways. The film is aptly named 'Hello NYUAD' to symbolize the act of receiving a call that brings about monumental change, reflecting my journey and growth through my time at NYU Abu Dhabi </p> <!-- A descriptive paragraph detailing the concept and inspiration behind the film, its connection to the creator's life experiences, and its significance -->
+    </div>
+
+</div>
+
+
+<!-- Picture Section -->
+<div class="w3-container section-h w3-padding-64" id="picture"> <!-- Main container for the picture section with styling and padding applied, identified by "picture" -->
+    <h1> My Highlights </h1> <!-- Section title -->
+    <div class="w3-row w3-padding-16 w3-center"> <!-- Row container to hold the images and their descriptions, centrally aligned with additional padding -->
+
+        <div class="w3-third"> <!-- Container for the first highlight, taking up one-third of the container's width for a three-column layout -->
+            <img src="webimg/glee.jpeg" alt="Image 1" style="width:100%"> <!-- The first image with a source path, alt text, and style to fill the container width -->
+            <div class="w3-third-content"> <!-- Container for the description of the first image -->
+                <h2> Glee Soundtrack </h2> <!-- Title for the first highlight -->
+                <p> The 'Glee' soundtrack stands out as one of my all-time favorite TV show soundtracks. Ever since I started watching the show back in 2017, its music has profoundly impacted me, resonating deeply with my soul </p> <!-- Description of the first highlight -->
+            </div>
+        </div>
+
+        <div class="w3-third"> <!-- Container for the second highlight -->
+            <img src="webimg/thailand.jpg" alt="Image 2" style="width:100%"> <!-- The second image with full container width -->
+            <div class="w3-third-content"> <!-- Description container for the second highlight -->
+                <h2> Thailand </h2> <!-- Title for the second highlight -->
+                <p> Thailand captivated me with its vibrant culture, stunning landscapes, and the warmth of its people. Each visit, from bustling Bangkok to serene beaches and lush jungles, offers unique and enriching experiences </p> <!-- Description for the second highlight -->
+            </div>
+        </div>
+
+        <div class="w3-third"> <!-- Container for the third highlight -->
+            <img src="webimg/Digital Camera.jpg" alt="Image 3" style="width:100%"> <!-- The third image with full width -->
+            <div class="w3-third-content"> <!-- Description container for the third highlight -->
+                <h2> Digital Camera </h2> <!-- Title for the third highlight -->
+                <p> Digital cameras have revolutionized my approach to capturing life's moments. They serve as a gateway to preserving the beauty and spontaneity of experiences, from breathtaking landscapes to fleeting smiles </p> <!-- Description of the third highlight -->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Contact Section -->
+<div id="contact" class="contact section-h"> <!-- Container for the contact section, identified by "contact" for linking and styled for layout -->
+    <div class="contact-container"> <!-- Inner container for contact form elements and styling -->
+        <div class="contact-title"> <!-- Container for the contact section title -->
+            <h1> Contact Me ☏ </h1> <!-- Title for the contact section with a telephone emoji for visual appeal -->
+        </div>
+        <form> <!-- Form element to collect user input -->
+            <label>Name</label> <!-- Label for the name input field -->
+            <input type="text"> <!-- Input field for name -->
+            <label>Email</label> <!-- Label for the email input field -->
+            <input type="text"> <!-- Input field for email -->
+            <label>Subject</label> <!-- Label for the subject input field -->
+            <input type="text"> <!-- Input field for subject -->
+            <label>Comment</label> <!-- Label for the comment textarea -->
+            <textarea></textarea> <!-- Textarea for longer comments or messages -->
+        </form>
+    </div>
+</div>
+
+<!-- JavaScript for Carousel -->
+<script src="websitescript.js" > </script> <!-- Link to an external JavaScript file named "websitescript.js" for dynamic behavior, likely including functionality for a carousel or other interactive elements -->
+
